@@ -10,7 +10,7 @@ import {
   IoIosArrowUp,
 } from "react-icons/io";
 
-const navbar = [
+const contactList = [
   {
     id: 1,
     name: "JOHN",
@@ -54,6 +54,13 @@ const navbar = [
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
 ];
+
+//Create a useState for cycling names through the prompt div on the bottom
+
+
+
+
+
 // Custom hook for handling the modal
 const useContactModal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -117,7 +124,8 @@ function Contacts() {
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>
-        <IoIosArrowForward size={170} />
+        <div onClick={() => nextContact()} > <IoIosArrowForward size={170} /></div>
+       
       </div>
     );
   };
@@ -125,7 +133,8 @@ function Contacts() {
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-        <IoIosArrowBack size={170} />
+        <div onClick={() => nextContact()} >
+        <IoIosArrowBack size={170} /></div>
       </div>
     );
   };
@@ -142,6 +151,15 @@ function Contacts() {
     beforeChange: (current, next) => setCardIndex(next),
   };
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to handle cycling through the array
+  const nextContact = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % contactList.length);
+  };
+
+
+
   return (
     <>
       <div id="contacts" className="settings">
@@ -153,7 +171,7 @@ function Contacts() {
         <div className="slider-call-1">
           <div className="slider">
             <Slider className="linkStyle" {...slidesSettings}>
-              {navbar.map((card, idx) => (
+              {contactList.map((card, idx) => (
                 <div
                   key={card.id}
                   onClick={() => openModal(card)}
@@ -166,7 +184,8 @@ function Contacts() {
             </Slider>
           </div>
           <div className="prompt">
-            <h1>Call Mark?</h1></div>
+            <h1>Call {contactList[currentIndex].name}?</h1>
+            </div>
         </div>
       </div>
 
