@@ -112,12 +112,12 @@
 }
 
 .next {
-  right: -6%;
+  right: -8%;
   top: 39%;
 }
 
 .prev {
-  left: -6%;
+  left: -8%;
   top: 40%;
 }
 
@@ -125,12 +125,13 @@ svg.arrow-up {
   margin-left: 10%;
 }
 
+/* Moving the prompt on bottom of contact carousel */
 .prompt h1 {
   margin: 0;
   font-size: 50px;
   color: #2E3E5E;
   position: absolute;
-  left: 45%;
+  left: 48%;
   top: 97%
 }
 

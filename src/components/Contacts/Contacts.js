@@ -22,35 +22,35 @@ const contactList = [
     id: 2,
     name: "MATTHEW",
     pathway: "/iotControls",
-    call: "Call Son?",
+    call: "Call Matthew?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 3,
     name: "SALLY",
     pathway: "/entertainment",
-    call: "Call Son?",
+    call: "Call Sally?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 4,
     name: "MESERET",
     pathway: "/calendar",
-    call: "Call Daughter?",
+    call: "Call Meseret?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 5,
     name: "PRAPTI",
     pathway: "/calendar",
-    call: "Call Lucy?",
+    call: "Call Prapti?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
-    id: 5,
+    id: 6,
     name: "MARK",
     pathway: "/calendar",
-    call: "Call Lue?",
+    call: "Call Mark?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
 ];
@@ -133,7 +133,7 @@ function Contacts() {
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow prev" onClick={onClick}>
-        <div onClick={() => nextContact()} >
+        <div onClick={() => prevContact()} >
         <IoIosArrowBack size={170} /></div>
       </div>
     );
@@ -151,11 +151,17 @@ function Contacts() {
     beforeChange: (current, next) => setCardIndex(next),
   };
 
+
+// Use State to set prompt name under contact cards
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Function to handle cycling through the array
   const nextContact = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % contactList.length);
+  };
+  // Function to handle cycling through the array
+  const prevContact = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + contactList.length) % contactList.length);
   };
 
 
@@ -184,7 +190,7 @@ function Contacts() {
             </Slider>
           </div>
           <div className="prompt">
-            <h1>Call {contactList[currentIndex].name}?</h1>
+            <h1>{contactList[currentIndex].call}</h1>
             </div>
         </div>
       </div>
