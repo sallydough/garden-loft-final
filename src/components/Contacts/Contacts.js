@@ -13,9 +13,9 @@ import {
 const contactList = [
   {
     id: 1,
-    name: "JOHN",
+    name: "MOM One",
     pathway: "/home",
-    call: "Call John?",
+    call: "Call Mom One?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
