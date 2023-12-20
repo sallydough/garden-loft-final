@@ -15,7 +15,7 @@ function App() {
     <Router>
       <HelpButton />
       <Nav />
-      <Contacts />
+      <Entertainment />
     <Routes>
       {/* <Route path="/" element={<Nav />} /> */}
       <Route path="/call-help" element={<HelpButton />} />
