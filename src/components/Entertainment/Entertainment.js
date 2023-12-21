@@ -13,44 +13,44 @@ import {
 const contactList = [
   {
     id: 1,
-    name: "MOM One",
+    name: "JEOPARDY",
     pathway: "/home",
-    call: "Call Mom One?",
+    call: "Watch Jeopardy?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 2,
-    name: "MATTHEW",
+    name: "SURPRISE ME",
     pathway: "/iotControls",
-    call: "Call Matthew?",
+    call: "Watch something random?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 3,
-    name: "SALLY",
+    name: "HOLLYWOOD SQUARES",
     pathway: "/entertainment",
-    call: "Call Sally?",
+    call: "Watch Hollywood Squares?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 4,
-    name: "MESERET",
+    name: "IRON CHEF",
     pathway: "/calendar",
-    call: "Call Meseret?",
+    call: "Watch Iron Chef?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 5,
-    name: "PRAPTI",
+    name: "WHEEL OF FORTUNE",
     pathway: "/calendar",
-    call: "Call Prapti?",
+    call: "Watch Wheel Of Fortune?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
   {
     id: 6,
-    name: "MARK",
+    name: "GOLDEN GIRLS",
     pathway: "/calendar",
-    call: "Call Mark?",
+    call: "Watch Golden Girls?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
 ];
@@ -83,7 +83,7 @@ const useContactModal = () => {
   };
 };
 
-function Contacts() {
+function Entertainment() {
   // handle Help Button
   // const handleHelpClick = () => {
   //   const phoneNumber = "+1234556778";
@@ -168,7 +168,7 @@ function Contacts() {
 
   return (
     <>
-      <div id="lights" className="settings">
+      <div id="entertainment" className="settings">
         <Link to="/" className="linkStyle">
           <div className="up-arrow">
             <IoIosArrowUp size={90} className="arrow-up" />
@@ -215,4 +215,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default Entertainment;

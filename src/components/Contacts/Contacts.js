@@ -168,7 +168,7 @@ function Contacts() {
 
   return (
     <>
-      <div id="lights" className="settings">
+      <div id="contacts" className="settings">
         <Link to="/" className="linkStyle">
           <div className="up-arrow">
             <IoIosArrowUp size={90} className="arrow-up" />

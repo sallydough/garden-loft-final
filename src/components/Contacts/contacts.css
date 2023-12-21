@@ -16,20 +16,14 @@
   margin-left: 7rem;
 }
 
-.slider-call {
+ .slider-call {
   display: flex;
   flex-direction: column;
   padding-top: 9rem;
 }
 
-.call-help h1 {
+.call-help h1  {
   margin: 1rem;
-}
-
-.arrow-down {
-  display: flex;
-  flex-direction: column;
-  margin-left: 47%;
 }
 
 .home-logo {
@@ -42,7 +36,7 @@
 }
 
 /* change centering between carousel slides */
-.slick-slide > div {
+.slick-slide > div  {
   display: grid;
   place-items: center;
   width: 100%;
@@ -75,7 +69,7 @@
   position:relative;
 }
 
-.slide h1 {
+.slide h1  {
   padding: 30px;
   font-size: 60px;
 }
@@ -84,19 +78,19 @@
   margin-top: 30px;
 }
 
-.activeSlide {
+.activeSlide  {
   transform: scale(.9);
   opacity: 1;
   background-color: #f3b718;
 }
 
-.arrow {
+.arrow  {
   color: #f8d408;
   position: absolute;
   cursor: pointer;
   z-index: 10;
 }
-.arrow-up {
+.arrow-up  {
   color: #f8d408;
   z-index: 10;
   right: 45%;
@@ -107,7 +101,7 @@
   transition: color 300ms;
 }
 
-.arrow svg:hover {
+.arrow svg:hover  {
   color: #68edff;
 }
 
@@ -116,7 +110,7 @@
   top: 39%;
 }
 
-.prev {
+.prev  {
   left: -8%;
   top: 40%;
 }

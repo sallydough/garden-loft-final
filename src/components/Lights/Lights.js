@@ -123,7 +123,7 @@ function Lights() {
 
   return (
     <>
-      <div id="contacts" className="settings">
+      <div id="lights" className="settings">
         <Link to="/" className="linkStyle">
           <div className="up-arrow">
             <IoIosArrowUp size={90} className="arrow-up" />
