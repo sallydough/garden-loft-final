@@ -48,7 +48,7 @@ const contactList = [
   },
   {
     id: 6,
-    name: "THREE'S COMPANY",
+    name: "GOLDEN GIRLS",
     pathway: "/calendar",
     call: "Watch Golden Girls?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
