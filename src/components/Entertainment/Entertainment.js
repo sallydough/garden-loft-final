@@ -50,7 +50,7 @@ const contactList = [
     id: 6,
     name: "SURVIVOR",
     pathway: "/calendar",
-    call: "Watch Survivor?",
+    call: "Watch SIMPSONS",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
 ];
