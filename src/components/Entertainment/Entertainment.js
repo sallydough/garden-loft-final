@@ -48,9 +48,9 @@ const contactList = [
   },
   {
     id: 6,
-    name: "SURVIVOR",
+    name: "GOLDEN GIRLS",
     pathway: "/calendar",
-    call: "Watch SIMPSONS",
+    call: "Watch Golden Girls?",
     icon: <FaUserAlt size={230} className="nav-icon" />,
   },
 ];
